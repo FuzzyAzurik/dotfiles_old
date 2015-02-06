@@ -1,0 +1,1 @@
+/home/jacob/.bash_aliases
