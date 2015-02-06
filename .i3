@@ -1,1 +1,0 @@
-/home/jacob/.i3/
