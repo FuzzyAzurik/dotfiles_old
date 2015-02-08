@@ -186,7 +186,7 @@ bar {
 
         	# Type             border  background font
         	focused_workspace  #FF6600 #FF6103 #ffffff
-        	active_workspace   #333333 #5f676a #ffffff
+        	active_workspace   #9B30FF #551A8B #cfcfcf
         	inactive_workspace #9B30FF #551A8B #cfcfcf
         	urgent_workspace   #aa0000 #990000 #ffffff
         }
