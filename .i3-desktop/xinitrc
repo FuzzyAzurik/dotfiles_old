@@ -1,2 +1,2 @@
-xrandr --output eDP1 --primary 
-#xrandr --output HDMI1 --mode 1920x1080 -r 60 --right-of eDP1
+xrandr --output DFP3 --primary 
+xrandr --output DFP4 --mode 1920x1080 -r 60 --right-of DFP3
