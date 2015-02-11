@@ -29,8 +29,8 @@ set $mod Mod4
 
 # class                 border  backgr. text    indicator
 client.focused          #FF9900 #FF6103 #ffffff #292d2e
-client.focused_inactive #333333 #5f676a #ffffff #484e50
-client.unfocused        #000000 #2E0854 #cfcfcf232 #292d2e
+client.focused_inactive #333333 #2E0854 #ffffff #484e50
+client.unfocused        #000000 #2E0854 #cfcfcf #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
 
