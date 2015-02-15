@@ -166,7 +166,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #Assign multiple monitors
-#xrandr --output eDP1 --primary 
+#xrandr --output eDP1 --primary --auto 
 #xrandr --output HDMI1 --right-of eDP1
 #workspace "1 : Main" output DFP3
 #workspace "2 : www" output DFP3
