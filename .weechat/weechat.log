@@ -1,0 +1,16 @@
+[2015-02-15 12:59:32] WeeChat 0.4.2 (compiled on Oct 25 2013 09:30:24)
+[2015-02-15 12:59:32] Reading configuration file sec.conf
+[2015-02-15 12:59:32] Reading configuration file weechat.conf
+[2015-02-15 12:59:32] Reading configuration file plugins.conf
+[2015-02-15 12:59:32] Reading configuration file rmodifier.conf
+[2015-02-15 12:59:33] Reading configuration file alias.conf
+[2015-02-15 12:59:33] Reading configuration file aspell.conf
+[2015-02-15 12:59:33] Reading configuration file relay.conf
+[2015-02-15 12:59:33] Reading configuration file irc.conf
+[2015-02-15 12:59:33] irc: connecting to server tausen.org/6667...
+[2015-02-15 12:59:33] Reading configuration file charset.conf
+[2015-02-15 12:59:33] Reading configuration file logger.conf
+[2015-02-15 12:59:33] Reading configuration file script.conf
+[2015-02-15 12:59:33] Reading configuration file xfer.conf
+[2015-02-15 15:06:53] irc: connecting to server tausen.org/6667...
+[2015-02-15 19:27:00] irc: connecting to server tausen.org/6667...

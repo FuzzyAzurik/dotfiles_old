@@ -1,0 +1,199 @@
+2015-01-23 19:37:44		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-01-23 19:37:57	=!=	You can not write text in this buffer
+2015-01-23 19:38:02	=!=	You can not write text in this buffer
+2015-01-23 19:39:25		[core]
+2015-01-23 19:39:25		  away     color    debug    help     key      mute     quit     save     unset    version
+2015-01-23 19:39:25		  bar      command  eval     history  layout   plugin   reload   secure   upgrade  wait   
+2015-01-23 19:39:25		  buffer   cursor   filter   input    mouse    proxy    repeat   set      uptime   window 
+2015-01-23 19:39:25		[rmodifier]
+2015-01-23 19:39:25		  rmodifier
+2015-01-23 19:39:25		[ruby]
+2015-01-23 19:39:25		  ruby
+2015-01-23 19:39:25		[alias]
+2015-01-23 19:39:25		  AAWAY    ANICK    CL       J        M        REDRAW   UB       W        WW     
+2015-01-23 19:39:25		  alias    BYE      CLOSE    K        MUB      SAY      UMODE    WC     
+2015-01-23 19:39:25		  AME      C        EXIT     KB       N        SIGNOFF  unalias  WI     
+2015-01-23 19:39:25		  AMSG     CHAT     IG       LEAVE    Q        T        V        WII    
+2015-01-23 19:39:25		[lua]
+2015-01-23 19:39:25		  lua
+2015-01-23 19:39:25		[aspell]
+2015-01-23 19:39:25		  aspell
+2015-01-23 19:39:25		[relay]
+2015-01-23 19:39:25		  relay
+2015-01-23 19:39:25		[irc]
+2015-01-23 19:39:25		  admin       devoice     kickban     names       quiet       server      unban     
+2015-01-23 19:39:25		  allchan     die         kill        nick        quote       service     userhost  
+2015-01-23 19:39:25		  allserv     disconnect  links       notice      reconnect   servlist    users     
+2015-01-23 19:39:25		  ban         halfop      list        notify      rehash      squery      version   
+2015-01-23 19:39:25		  connect     ignore      lusers      op          restart     squit       voice     
+2015-01-23 19:39:25		  ctcp        info        map         oper        sajoin      stats       wallchops 
+2015-01-23 19:39:25		  cycle       invite      me          part        samode      summon      wallops   
+2015-01-23 19:39:25		  dcc         ison        mode        ping        sanick      time        who       
+2015-01-23 19:39:25		  dehalfop    join        motd        pong        sapart      topic       whois     
+2015-01-23 19:39:25		  deop        kick        msg         query       saquit      trace       whowas    
+2015-01-23 19:39:25		[charset]
+2015-01-23 19:39:25		  charset
+2015-01-23 19:39:25		[python]
+2015-01-23 19:39:25		  python
+2015-01-23 19:39:25		[tcl]
+2015-01-23 19:39:25		  tcl
+2015-01-23 19:39:25		[logger]
+2015-01-23 19:39:25		  logger
+2015-01-23 19:39:25		[script]
+2015-01-23 19:39:25		  script
+2015-01-23 19:39:25		[perl]
+2015-01-23 19:39:25		  perl
+2015-01-23 19:39:25		[xfer]
+2015-01-23 19:39:25		  me  xfer
+2015-01-23 19:43:45		irc: server oftc created
+2015-01-23 19:43:54		irc: server tausen created
+2015-01-23 19:44:11	=!=	irc: unknown option for "server" command
+2015-01-23 19:44:25		[irc]  /server  list|listfull [<server>]
+2015-01-23 19:44:25		                add <server> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2015-01-23 19:44:25		                copy|rename <server> <new_name>
+2015-01-23 19:44:25		                del|keep <server>
+2015-01-23 19:44:25		                deloutq|jump|raw
+2015-01-23 19:44:25		list, add or remove IRC servers
+2015-01-23 19:44:25		    list: list servers (without argument, this list is displayed)
+2015-01-23 19:44:25		listfull: list servers with detailed info for each server
+2015-01-23 19:44:25		     add: create a new server
+2015-01-23 19:44:25		  server: server name, for internal and display use
+2015-01-23 19:44:25		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2015-01-23 19:44:25		    temp: create temporary server (not saved)
+2015-01-23 19:44:25		  option: set option for server (for boolean option, value can be omitted)
+2015-01-23 19:44:25		nooption: set boolean option to 'off' (for example: -nossl)
+2015-01-23 19:44:25		    copy: duplicate a server
+2015-01-23 19:44:25		  rename: rename a server
+2015-01-23 19:44:25		    keep: keep server in config file (for temporary servers only)
+2015-01-23 19:44:25		     del: delete a server
+2015-01-23 19:44:25		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2015-01-23 19:44:25		    jump: jump to server buffer
+2015-01-23 19:44:25		     raw: open buffer with raw IRC data
+2015-01-23 19:44:25		Examples:
+2015-01-23 19:44:25		  /server listfull
+2015-01-23 19:44:25		  /server add oftc irc.oftc.net/6697 -ssl -autoconnect
+2015-01-23 19:44:25		  /server add oftc6 irc6.oftc.net/6697 -ipv6 -ssl
+2015-01-23 19:44:25		  /server add freenode2 chat.eu.freenode.net/6667,chat.us.freenode.net/6667
+2015-01-23 19:44:25		  /server add freenode3 irc.freenode.net -password=mypass
+2015-01-23 19:44:25		  /server copy oftc oftcbis
+2015-01-23 19:44:25		  /server rename oftc newoftc
+2015-01-23 19:44:25		  /server del freenode
+2015-01-23 19:44:25		  /server deloutq
+2015-01-23 19:44:37	=!=	No help available, "del" is not a command or an option
+2015-01-23 19:44:43		irc: server oftc has been deleted
+2015-01-23 19:45:38		Option changed: irc.server.tausen.username = "jacob"  (default: (undefined))
+2015-01-23 19:46:14		Option changed: irc.server.tausen.realname = "jacob wortmann"  (default: (undefined))
+2015-01-23 19:46:54		Option changed: irc.server.tausen.autoconnect = on  (default: (undefined))
+2015-01-23 19:47:35		Option changed: irc.server.tausen.nicks = "jacob","Fuzzy","Jacob"  (default: (undefined))
+2015-01-23 19:47:48		Option changed: irc.server.tausen.nicks = "jacob,Fuzzy,Jacob"  (default: (undefined))
+2015-01-23 19:48:38		Option changed: irc.server.tausen.autojoin = "#asd,#innowell"  (default: (undefined))
+2015-01-23 19:57:30		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-01-23 19:58:25		Options reloaded from sec.conf
+2015-01-23 19:58:25		Options reloaded from weechat.conf
+2015-01-23 19:58:25		Options reloaded from plugins.conf
+2015-01-23 19:58:25		Options reloaded from rmodifier.conf
+2015-01-23 19:58:25		Options reloaded from alias.conf
+2015-01-23 19:58:25		Options reloaded from aspell.conf
+2015-01-23 19:58:25		Options reloaded from relay.conf
+2015-01-23 19:58:25		Options reloaded from irc.conf
+2015-01-23 19:58:25		Options reloaded from charset.conf
+2015-01-23 19:58:25		Options reloaded from logger.conf
+2015-01-23 19:58:25		Options reloaded from script.conf
+2015-01-23 19:58:25		Options reloaded from xfer.conf
+2015-01-23 20:02:58		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-01-23 20:03:27		Options reloaded from sec.conf
+2015-01-23 20:03:27		Options reloaded from weechat.conf
+2015-01-23 20:03:27		Options reloaded from plugins.conf
+2015-01-23 20:03:27		Options reloaded from rmodifier.conf
+2015-01-23 20:03:27		Options reloaded from alias.conf
+2015-01-23 20:03:27		Options reloaded from aspell.conf
+2015-01-23 20:03:27		Options reloaded from relay.conf
+2015-01-23 20:03:27		Options reloaded from irc.conf
+2015-01-23 20:03:27		Options reloaded from charset.conf
+2015-01-23 20:03:27		Options reloaded from logger.conf
+2015-01-23 20:03:27		Options reloaded from script.conf
+2015-01-23 20:03:27		Options reloaded from xfer.conf
+2015-01-23 20:07:33		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-01-23 20:21:02		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-01-23 20:30:44		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-01-24 21:15:37	=!=	Error with command "disconnect" (try /help disconnect)
+2015-01-24 21:15:48	=!=	Error: unknown command "clear" (type /help for help)
+2015-01-24 21:22:20	=!=	python: script "script.py" not found
+2015-01-24 21:22:25	=!=	python: script "script.py" not found
+2015-01-24 21:22:33	=!=	python: script "script.py" not found
+2015-01-24 21:22:46		[core]
+2015-01-24 21:22:46		  away     color    debug    help     key      mute     quit     save     unset    version
+2015-01-24 21:22:46		  bar      command  eval     history  layout   plugin   reload   secure   upgrade  wait   
+2015-01-24 21:22:46		  buffer   cursor   filter   input    mouse    proxy    repeat   set      uptime   window 
+2015-01-24 21:22:46		[rmodifier]
+2015-01-24 21:22:46		  rmodifier
+2015-01-24 21:22:46		[ruby]
+2015-01-24 21:22:46		  ruby
+2015-01-24 21:22:46		[alias]
+2015-01-24 21:22:46		  AAWAY    AMSG     C        CLOSE    J        LEAVE    N        SAY      UB       V        WI     
+2015-01-24 21:22:46		  alias    ANICK    CHAT     EXIT     K        M        Q        SIGNOFF  UMODE    W        WII    
+2015-01-24 21:22:46		  AME      BYE      CL       IG       KB       MUB      REDRAW   T        unalias  WC       WW     
+2015-01-24 21:22:46		[lua]
+2015-01-24 21:22:46		  lua
+2015-01-24 21:22:46		[aspell]
+2015-01-24 21:22:46		  aspell
+2015-01-24 21:22:46		[relay]
+2015-01-24 21:22:46		  relay
+2015-01-24 21:22:46		[irc]
+2015-01-24 21:22:46		  admin       dcc         ignore      kill        motd        oper        reconnect   saquit      summon      version   
+2015-01-24 21:22:46		  allchan     dehalfop    info        links       msg         part        rehash      server      time        voice     
+2015-01-24 21:22:46		  allserv     deop        invite      list        names       ping        restart     service     topic       wallchops 
+2015-01-24 21:22:46		  ban         devoice     ison        lusers      nick        pong        sajoin      servlist    trace       wallops   
+2015-01-24 21:22:46		  connect     die         join        map         notice      query       samode      squery      unban       who       
+2015-01-24 21:22:46		  ctcp        disconnect  kick        me          notify      quiet       sanick      squit       userhost    whois     
+2015-01-24 21:22:46		  cycle       halfop      kickban     mode        op          quote       sapart      stats       users       whowas    
+2015-01-24 21:22:46		[charset]
+2015-01-24 21:22:46		  charset
+2015-01-24 21:22:46		[python]
+2015-01-24 21:22:46		  python
+2015-01-24 21:22:46		[tcl]
+2015-01-24 21:22:46		  tcl
+2015-01-24 21:22:46		[logger]
+2015-01-24 21:22:46		  logger
+2015-01-24 21:22:46		[script]
+2015-01-24 21:22:46		  script
+2015-01-24 21:22:46		[perl]
+2015-01-24 21:22:46		  perl
+2015-01-24 21:22:46		[xfer]
+2015-01-24 21:22:46		  me  xfer
+2015-01-26 11:18:35		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-02-01 09:39:20		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-02-09 09:16:25		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-02-12 11:05:54		script: downloading list of scripts...
+2015-02-12 11:05:54		script: 274 scripts for WeeChat 0.4.2
+2015-02-12 11:05:55		python: loading script "/home/jacob/.weechat/python/notify.py"
+2015-02-12 11:05:55		python: stdout/stderr: Missing package(s) for notify: No module named notify2
+2015-02-12 11:05:55		python: stdout/stderr: You must have notify2 installed.
+2015-02-12 11:05:55		python: stdout/stderr: Traceback (most recent call last):
+2015-02-12 11:05:55		python: stdout/stderr:   File "/home/jacob/.weechat/python/notify.py", line 74, in <module>
+2015-02-12 11:05:55		python: stdout/stderr:     "low"      : notify2.URGENCY_LOW,
+2015-02-12 11:05:55		python: stdout/stderr: NameError: name 'notify2' is not defined
+2015-02-12 11:05:55	=!=	python: unable to parse file "/home/jacob/.weechat/python/notify.py"
+2015-02-12 11:06:19		script: script "notify2.py" not found
+2015-02-12 11:06:21		script: script "notify2" not found
+2015-02-12 11:09:06		script: script "notify2" not found
+2015-02-12 11:09:09		script: script "notify.py" is already installed and up-to-date
+2015-02-12 11:09:21		script: script "notify" is not loaded
+2015-02-12 11:09:24		script: script "notify.py" is not loaded
+2015-02-12 11:09:27		Options reloaded from sec.conf
+2015-02-12 11:09:27		Options reloaded from weechat.conf
+2015-02-12 11:09:27		Options reloaded from plugins.conf
+2015-02-12 11:09:27		Options reloaded from rmodifier.conf
+2015-02-12 11:09:27		Options reloaded from alias.conf
+2015-02-12 11:09:27		Options reloaded from aspell.conf
+2015-02-12 11:09:27		Options reloaded from relay.conf
+2015-02-12 11:09:27		Options reloaded from irc.conf
+2015-02-12 11:09:27		Options reloaded from charset.conf
+2015-02-12 11:09:27		Options reloaded from logger.conf
+2015-02-12 11:09:27		Options reloaded from script.conf
+2015-02-12 11:09:27		Options reloaded from xfer.conf
+2015-02-12 11:09:33		script: 274 scripts for WeeChat 0.4.2
+2015-02-12 11:09:33		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-02-15 12:59:33		script: downloading list of scripts...
+2015-02-15 12:59:33		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2015-02-15 12:59:34		script: 274 scripts for WeeChat 0.4.2
