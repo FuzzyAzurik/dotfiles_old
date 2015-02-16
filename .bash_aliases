@@ -26,3 +26,7 @@ alias aptupup='sudo apt-get update && sudo apt-get upgrade'
 
 #jacobwortman.dk
 alias sshjw='ssh jacob@151.236.216.182'
+
+#School
+alias sshcaal='ssh caal.cs.aau.dk -l jwortm10@student.aau.dk'
+
