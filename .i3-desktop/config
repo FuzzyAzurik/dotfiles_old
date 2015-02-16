@@ -12,8 +12,8 @@
 #auto start
 #exec --no-startup-id ~/Programs/pa-applet/src/pa-applet
 exec --no-startup-id skype
-exec --no-startup-id hexchat
-#exec --no-startup-id i3-msg 'workspace 4 : chat; exec /usr/bin/gnome-terminal -x weechat;workspace 1 : main'
+#exec --no-startup-id hexchat
+exec --no-startup-id i3-msg 'workspace 4 : chat; exec /usr/bin/gnome-terminal -x weechat;workspace 1 : main'
 exec --no-startup-id dropbox start
 exec --no-startup-id thunderbird
 #Set xrandr fix (dual monitor)
@@ -203,9 +203,9 @@ bar {
         	inactive_workspace #9B30FF #551A8B #cfcfcf
         	urgent_workspace   #aa0000 #990000 #ffffff
         }
-    tray_output DFP3 
     # Using custom i3status.conf
-    status_command i3status -c ~/.i3/i3status.conf
+    status_command i3status -c ~/.i3/i3status.conf    
+    tray_output primary 
 }
 
 #Assign window on workspace
