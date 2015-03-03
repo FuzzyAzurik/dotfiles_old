@@ -1,2 +1,2 @@
-.weechat/logs/
+.weechat/logs/*
 .weechat/*.log
