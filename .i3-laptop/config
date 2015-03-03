@@ -28,8 +28,8 @@ set $mod Mod4
 
 # class                 border  backgr. text    indicator
 client.focused          #FF9900 #FF6103 #ffffff #292d2e
-client.focused_inactive #333333 #5f676a #ffffff #484e50
-client.unfocused        #000000 #2E0854 #cfcfcf232 #292d2e
+client.focused_inactive #000000 #2E0854 #cfcfcf #292d2e
+client.unfocused        #000000 #2E0854 #cfcfcf #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
 
@@ -65,10 +65,10 @@ bindsym $mod+l focus up
 bindsym $mod+ae focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+ bindsym $mod+Left focus left
+ bindsym $mod+Down focus down
+ bindsym $mod+Up focus up
+ bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -77,10 +77,10 @@ bindsym $mod+Shift+l move up
 bindsym $mod+Shift+ae move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+ bindsym $mod+Shift+Left move left
+ bindsym $mod+Shift+Down move down
+ bindsym $mod+Shift+Up move up
+ bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -108,27 +108,38 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# set workspace names 
+set $tag1 "1 : code"
+set $tag2 "2 : www"
+set $tag3 "3 : term"
+set $tag4 "4 : chat"
+set $tag5 "5 : mail"
+set $tag6 "6 : torrent"  
+set $tag7 "7 : music"
+set $tag8 "8 : other"
+
+
 # switch to workspace
-bindsym $mod+1 workspace 1 : main
-bindsym $mod+2 workspace 2 : www
-bindsym $mod+3 workspace 3 : other
-bindsym $mod+4 workspace 4 : chat
-bindsym $mod+5 workspace 5 : mail
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
+bindsym $mod+1 workspace $tag1
+bindsym $mod+2 workspace $tag2
+bindsym $mod+3 workspace $tag3
+bindsym $mod+4 workspace $tag4
+bindsym $mod+5 workspace $tag5
+bindsym $mod+6 workspace $tag6
+bindsym $mod+7 workspace $tag7
+bindsym $mod+8 workspace $tag8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1 : main
-bindsym $mod+Shift+2 move container to workspace 2 : www
-bindsym $mod+Shift+3 move container to workspace 3 : other
-bindsym $mod+Shift+4 move container to workspace 4 : chat
-bindsym $mod+Shift+5 move container to workspace 5 : mail
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+1 move container to workspace $tag1
+bindsym $mod+Shift+2 move container to workspace $tag2
+bindsym $mod+Shift+3 move container to workspace $tag3
+bindsym $mod+Shift+4 move container to workspace $tag4
+bindsym $mod+Shift+5 move container to workspace $tag5
+bindsym $mod+Shift+6 move container to workspace $tag6
+bindsym $mod+Shift+7 move container to workspace $tag7
+bindsym $mod+Shift+8 move container to workspace $tag8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
@@ -189,19 +200,20 @@ bar {
         	inactive_workspace #9B30FF #551A8B #cfcfcf
         	urgent_workspace   #aa0000 #990000 #ffffff
         }
-	status_command i3status
+	    status_command i3status
         tray_output eDP1
         
         # Using custom i3status.conf
-        status_command i3status -c ~/.i3/i3status.conf
+        #status_command i3status -c ~/.i3/i3status.conf
 }
 
 #Assign window on workspace
-assign [class="Google-chrome"] 2 : www
-assign [class="Thunderbird"] 5 : mail
-assign [class="Skype"] 4 : chat
-assign [class="Hexchat"] 4 : chat
-assign [class="Ktorrent"] 6
+assign [class="Google-chrome"] $tag2
+assign [class="X-www-browser"] $tag2
+assign [class="Thunderbird"] $tag5 
+assign [class="Skype"] $tag4
+assign [class="Hexchat"] $tag4
+assign [class="Ktorrent"] $tag6
 
 # Disable mouse focus
 focus_follows_mouse no

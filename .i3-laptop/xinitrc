@@ -1,2 +1,2 @@
-xrandr --output VGA1 --primary 
-xrandr --output eDP1 --mode 1920x1080 -r 60 --right-of VGA1
+xrandr --output eDP1 --primary 
+xrandr --output HDMI1 --mode 1920x1080 -r 60 --right-of eDP1

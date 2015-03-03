@@ -29,4 +29,5 @@ alias sshjw='ssh jacob@151.236.216.182'
 
 #School
 alias sshcaal='ssh caal.cs.aau.dk -l jwortm10@student.aau.dk'
-
+alias supercom='ssh frontend1.mcc.uppaal.org -l jwortm10'
+alias ls='ls -h --color=auto'
