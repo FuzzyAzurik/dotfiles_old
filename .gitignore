@@ -1,2 +1,4 @@
 .weechat/logs/*
 .weechat/*.log
+plugins.xml.gz
+irc.conf
