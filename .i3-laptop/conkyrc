@@ -27,12 +27,12 @@ TEXT
   {"full_text": " ▲ ${if_up wlan0} [${upspeed wlan0}] ${else} [${upspeed eth0}] ${endif} ", "color":"\#ff0000"}, \
 #Shows downloadspeed
   {"full_text": " ▼ ${if_up wlan0} [${downspeed wlan0}] ${else} [${downspeed eth0}] ${endif} ", "color":"\#00fff2"}, \
+#Shows the first entry of htop
+  {"full_text": " Process: ${top name 1}■:${top cpu 1}% ||:${top mem 1}%", "color":"\#FF9933"}, \
 #Shows current memory usage with a bar
   {"full_text": " || [$membar] ", "color":"\#B58900"}, \
 #Shows current CPU usage with a bar
   {"full_text": " ■ [$cpubar] ", "color":"\#00A9B5"}, \
-#Shows the first entry of htop
-  {"full_text": " Process: ${top name 1}■:${top cpu 1}% ||:${top mem 1}%", "color":"\#FF9933"}, \
 #Shows temperature of GPU. Only works with NVIDIA cards with the proprietary drivers installed. Could be replaced with a lm-sensors-provided temperature
   {"full_text": " ≈ [${platform coretemp.0 temp 1}°C] ","color":"\#33CC99"}, \
 # batt

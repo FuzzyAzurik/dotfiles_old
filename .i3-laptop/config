@@ -13,7 +13,7 @@
 #auto start
 exec --no-startup-id ~/Programs/pa-applet/src/pa-applet
 exec --no-startup-id skype
-exec --no-startup-id i3-msg 'workspace 4 : chat; exec /usr/bin/gnome-terminal -x weechat;workspace 1 : main'
+exec --no-startup-id i3-msg 'workspace 4 : chat; exec /usr/bin/gnome-terminal -x weechat;workspace 1 : code'
 exec --no-startup-id dropbox start
 exec --no-startup-id thunderbird
 #Set xrandr fix (dual monitor)
@@ -40,7 +40,7 @@ client.urgent           #2D2D2D #2D2D2D #dcdcdc #900000
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
 #font pango:DejaVu Sans Mono 10
-font pango:Terminus 10
+font pango:Terminus 9.5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -175,6 +175,11 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+
+#changing keyboard layout
+bindsym $mod+y exec setxkbmap dk
+bindsym $mod+u exec setxkbmap gb
 
 #Assign multiple monitors
 #xrandr --output eDP1 --primary --auto 
