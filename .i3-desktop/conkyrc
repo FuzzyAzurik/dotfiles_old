@@ -1,0 +1,50 @@
+### 
+override_utf8_locale no
+#use_xft yes
+#xftfont Helvetica:size=15
+#xftalpha 0.9
+
+background        no
+out_to_console 	  yes
+out_to_x	  no
+update_interval	  1
+total_run_times	  0
+short_units	  yes
+pad_percents	  3
+mail_spool $MAIL
+
+short_units yes
+own_window no
+double_buffer yes
+
+TEXT
+,[\
+#Finds out if cmus is running. If it is, it provides 1) the current artist and 2) the current track. If cmus isn't running it outputs "Not Running"
+  {"full_text": " [${exec sh ~/.i3/.scripts/cmusconk.sh}] ", "color":"\#e4f800"}, \
+#Finds current volume. May need modified depending on your setup
+  {"full_text": " ♪ ${exec amixer get Master | grep -o "\[.*%\]"} ", "color":"\#268BD2"}, \
+#Shows current user
+  {"full_text": " ☻ [${exec whoami}] ", "color":"\#ff00f3"}, \
+#Shows uploadspeed
+  {"full_text": " ▲ ${if_up wlan0} [${upspeed wlan0}] ${else} [${upspeed eth0}] ${endif} ", "color":"\#ff0000"}, \
+#Shows downloadspeed
+  {"full_text": " ▼ ${if_up wlan0} [${downspeed wlan0}] ${else} [${downspeed eth0}] ${endif} ", "color":"\#00fff2"}, \
+#wireless
+{ "full_text" : "   ${if_up wlan0} ${exec curl -s icanhazip.com} ${else} NOT CONNECTED ${endif} ", "color" : "\#5cd637" }, \
+#Shows current memory usage with a bar
+  {"full_text": " || [$membar] ", "color":"\#B58900"}, \
+#Shows current CPU usage with a bar
+  {"full_text": " ■ [$cpubar] ", "color":"\#00A9B5"}, \
+#Bar showing available entropy. Install haveged if you want this to rocket up. Without, /proc/sys/kernel/random/entropy_avail reported on my sysem ~175. With, it reported ~3585
+  {"full_text": " ~ [$entropy_bar] ", "color":"\#AFB500"}, \
+#Shows temperature of GPU. Only works with NVIDIA cards with the proprietary drivers installed. Could be replaced with a lm-sensors-provided temperature
+ #{"full_text": " ≈ [${exec nvidia-settings -q gpucoretemp -t}°C] ","color":"\#33CC99"},
+# batt
+ { "full_text" : "   ${battery_percent}% ", "color" : "\#7690d6" }, \
+#Shows upime
+  {"full_text": " ↑ [${uptime}] ","color": "\#dc322f"}, \
+#Shows time
+  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#2fdc57"}  
+]
+
+#See 
