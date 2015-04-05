@@ -25,7 +25,7 @@ alias copy='xclip -selection clipboard'
 alias aptupup='sudo apt-get update && sudo apt-get upgrade'
 
 #jacobwortman.dk
-alias sshjw='ssh jacob@151.236.216.182'
+alias sshjw='ssh jacob@151.236.216.182' #jacob@jacobwortmann.dk will also work
 
 #School
 alias sshcaal='ssh caal.cs.aau.dk -l jwortm10@student.aau.dk'
