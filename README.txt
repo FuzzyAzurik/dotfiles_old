@@ -9,7 +9,7 @@ weechat,
 i3-config,
 bash_aliases,
 .vim_runtime (i am not sure i have done this correctly, submodule?)
-powerline
+powerline and gitstatus-powerline
 
 Things to remember when creating install script:
 fonts!!! read the different readmes in dependecies(there are also links)

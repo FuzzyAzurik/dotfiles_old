@@ -1,0 +1,53 @@
+{
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": false,
+	"bold_folder_labels": true,
+	"caret_extra_width": 1,
+	"caret_style": "phase",
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/User/SublimeLinter/itg.dark (SL).tmTheme",
+	"copy_with_empty_selection": true,
+	"detect_indentation": true,
+	"drag_text": false,
+	"draw_indent_guides": true,
+	"draw_minimap_border": true,
+	"enable_tab_scrolling": false,
+	"font_face": "Fantasque Sans Mono",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"font_size": 14,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"LaTeXing",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"itg_sidebar_tree_small": true,
+	"itg_small_tabs": true,
+	"match_brackets_content": true,
+	"match_selection": true,
+	"match_tags": true,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"preview_on_click": false,
+	"remember_open_files": false,
+	"remember_open_folders": false,
+	"scroll_past_end": true,
+	"scroll_speed": 5.0,
+	"show_full_path": false,
+	"sidebar_medium": true,
+	"tab_size": 4,
+	"tabs_small": true,
+	"theme": "itg.flat.dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": false,
+	"word_wrap": true
+}
