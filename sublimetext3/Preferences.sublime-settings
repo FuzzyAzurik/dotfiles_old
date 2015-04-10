@@ -5,7 +5,7 @@
 	"caret_extra_width": 1,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Theme - itg.flat/itg.dark.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/itg.dark (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"detect_indentation": true,
 	"drag_text": false,
@@ -17,7 +17,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
