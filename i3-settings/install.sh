@@ -8,7 +8,7 @@ if [[ -h $CONFIG ]]; then
     $(unlink $CONFIG)
 fi
 
-if [ $1 == "laptop" ] || [ $1 == "desktop" ]; then
+if [ "$1" = "laptop" ] || [ "$1" = "desktop" ]; then
     TARGET="$CONFIG-$1"
     if [[ -f $TARGET ]]; then
         echo "Creating symlink $TARGET --> $CONFIG"
