@@ -15,3 +15,14 @@ Things to remember when creating install script:
 fonts!!! read the different readmes in dependecies(there are also links)
 install vim-gnome(as is support clipboard)
 
+
+Things to install:
+Cmus
+Powerline
+gitstatus-powerline
+weechat
+ranger
+differents fonts(check the dependencies folder)
+
+
+
