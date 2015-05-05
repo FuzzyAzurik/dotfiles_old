@@ -17,14 +17,14 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 13,
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"LaTeXing",
-		"Vintage",
-		"JavaScript"
+		"Git",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
@@ -36,6 +36,7 @@
 	"match_brackets_content": true,
 	"match_selection": true,
 	"match_tags": true,
+	"numix_folder_icons": true,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": false,
@@ -47,7 +48,7 @@
 	"sidebar_medium": true,
 	"tab_size": 4,
 	"tabs_small": true,
-	"theme": "itg.flat.dark.sublime-theme",
+	"theme": "Numix Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true
