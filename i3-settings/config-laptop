@@ -25,7 +25,6 @@ exec --no-startup-id bumblebee-indicator
 
 #Set the modifier windows-key
 set $mod Mod4
-
 # Colors
 # class                 border  backgr. text    indicator
 client.focused          #d64937	#d64937 #dcdcdc #2e9ef4
@@ -178,9 +177,9 @@ bindsym $mod+r mode "resize"
 
 
 #changing keyboard layout
-bindsym $mod+y exec setxkbmap dk
-bindsym $mod+u exec setxkbmap gb
-
+#bindsym $mod+y exec setxkbmap dk
+#bindsym $mod+u exec setxkbmap gb
+bindsym Control+space exec ~/.i3/.scripts/keyboard-toggle.sh
 #Assign multiple monitors
 #xrandr --output eDP1 --primary --auto 
 #xrandr --output HDMI1 --right-of eDP1
