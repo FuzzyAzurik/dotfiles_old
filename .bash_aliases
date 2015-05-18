@@ -23,6 +23,8 @@ alias sleep='sudo pm-suspend'
 #Commands
 alias copy='xclip -selection clipboard'
 alias aptupup='sudo apt-get update && sudo apt-get upgrade'
+alias nemo='nemo --no-desktop'
+alias nautilus='nautilus --no-desktop'
 
 #jacobwortman.dk
 alias sshjw='ssh jacob@151.236.216.182' #jacob@jacobwortmann.dk will also work

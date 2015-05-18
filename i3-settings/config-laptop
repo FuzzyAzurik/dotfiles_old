@@ -15,6 +15,7 @@ exec --no-startup-id ~/Programs/pa-applet/src/pa-applet
 exec --no-startup-id skype
 exec --no-startup-id i3-msg 'workspace 4 : chat; exec /usr/bin/gnome-terminal -x weechat;workspace 1 : code'
 exec --no-startup-id dropbox start
+exec --no-startup-id insync start
 exec --no-startup-id thunderbird
 #Set xrandr fix (dual monitor)
 #exec --no-startup-id ~/.i3/xinitrc-laptop

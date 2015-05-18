@@ -150,8 +150,9 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 
 #changing keyboard layout
-bindsym $mod+y exec setxkbmap dk
-bindsym $mod+u exec setxkbmap gb
+#bindsym $mod+y exec setxkbmap dk
+#bindsym $mod+u exec setxkbmap gb
+bindsym Control+space exec ~/.i3/.scripts/keyboard-toggle.sh
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
