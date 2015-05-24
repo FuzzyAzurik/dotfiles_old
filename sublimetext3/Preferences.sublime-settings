@@ -22,9 +22,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"LaTeXing",
 		"Git",
-		"Vintage"
+		"Vintage",
+		"LaTeXing"
 	],
 	"indent_guide_options":
 	[
