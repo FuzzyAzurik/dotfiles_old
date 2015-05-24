@@ -4,6 +4,7 @@ Also remember to install vim-gnome, when on a ubuntu machine.(this is purely to 
 Things still missing:
 2: ranger
 
+
 Implemented things:
 weechat,
 i3-config,
@@ -23,6 +24,6 @@ gitstatus-powerline
 weechat
 ranger
 differents fonts(check the dependencies folder)
-
+Thunar (GUI filemanager), remember to costumize with icon pack flatrr(https://github.com/NitruxSA/flattr-icons) and remember that to create the config file ~/.gtkrc-2.0
 
 
