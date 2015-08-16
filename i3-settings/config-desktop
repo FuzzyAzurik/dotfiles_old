@@ -114,14 +114,14 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # set workspace names 
-set $tag1 " code"
-set $tag2 " web"
-set $tag3 " term"
-set $tag4 " chat"
-set $tag5 "  mail"
-set $tag6 " torrent"  
-set $tag7 "  music"
-set $tag8 " other"
+set $tag1 "1: code"
+set $tag2 "2: web"
+set $tag3 "3: term"
+set $tag4 "4: chat"
+set $tag5 "5:  mail"
+set $tag6 "6: torrent"  
+set $tag7 "7:  music"
+set $tag8 "8: other"
 
 
 # switch to workspace
@@ -204,6 +204,7 @@ bar {
     font pango: Terminus, FontAwesome 9.5
     status_command bash ~/.i3/conky
     tray_output DFP3
+    strip_workspace_numbers yes
 
     colors{
         background #2d2d2d
