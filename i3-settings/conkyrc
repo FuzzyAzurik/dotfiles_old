@@ -34,7 +34,7 @@ TEXT
 #Shows temperature of GPU. Only works with NVIDIA cards with the proprietary drivers installed. Could be replaced with a lm-sensors-provided temperature
   {"full_text": " ≈ [${platform coretemp.0 temp 1}°C] ","color":"\#33CC99"}, \
 # batt
-  {"full_text" : "${if_match ${battery_percent} > 0 } ${if_match ${battery_percent} <= 15}  ${endif}${endif}${if_match ${battery_percent} > 15} ${if_match ${battery_percent} <= 50}  ${endif}${endif}${if_match ${battery_percent} > 50} ${if_match ${battery_percent} <= 75}  ${endif}${endif}${if_match ${battery_percent} > 75} ${if_match ${battery_percent} <= 100}  ${endif}${endif}${battery_percent}%", "color" : "\#7690d6"}, \
+  {"full_text" : "${if_match ${battery_percent} > 0 } ${if_match ${battery_percent} <= 15} ${endif}${endif}${if_match ${battery_percent} > 15} ${if_match ${battery_percent} <= 50} ${endif}${endif}${if_match ${battery_percent} > 50} ${if_match ${battery_percent} <= 75}  ${endif}${endif}${if_match ${battery_percent} > 75} ${if_match ${battery_percent} <= 100}  ${endif}${endif}${battery_percent}%", "color" : "\#7690d6"}, \
   {"full_text" : "", "color" : "\#7690d6" }, \
 #Shows upime
 #  {"full_text": " ↑ [${uptime}] ","color": "\#dc322f"}, \

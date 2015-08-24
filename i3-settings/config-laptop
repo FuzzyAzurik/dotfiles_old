@@ -17,6 +17,7 @@ exec --no-startup-id i3-msg 'workspace 4 : chat; exec /usr/bin/gnome-terminal -x
 exec --no-startup-id dropbox start
 exec --no-startup-id insync start
 exec --no-startup-id thunderbird
+exec --no-startup-id ./.scripts/xflux -l 57.0500 -g 9.9167
 #Set xrandr fix (dual monitor)
 #exec --no-startup-id ~/.i3/xinitrc-laptop
 #Set wallpaper
@@ -108,15 +109,15 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# set workspace names 
-set $tag1 "1 : code"
-set $tag2 "2 : www"
-set $tag3 "3 : term"
-set $tag4 "4 : chat"
-set $tag5 "5 : mail"
-set $tag6 "6 : torrent"  
-set $tag7 "7 : music"
-set $tag8 "8 : other"
+# set workspace names
+set $tag1 "1: code"
+set $tag2 "2: web"
+set $tag3 "3: term"
+set $tag4 "4: chat"
+set $tag5 "5:  mail"
+set $tag6 "6: torrent"
+set $tag7 "7:  music"
+set $tag8 "8: other"
 
 
 # switch to workspace
@@ -193,7 +194,8 @@ bindsym Control+space exec ~/.i3/.scripts/keyboard-toggle.sh
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available:)
 bar {
-    font pango: Terminus, Icons 9.5
+    strip_workspace_numbers yes
+    font pango: Terminus, FontAwesome 9.5
     status_command bash ~/.i3/conky
     tray_output eDP1
 
