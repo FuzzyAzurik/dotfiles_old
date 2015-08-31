@@ -2,3 +2,4 @@
 	path = vim_tlhunter
 	#url = https://github.com/tlhunter/vimrc.git
 	url = https://github.com/FuzzyAzurik/vimrc-1
+	branch = master
