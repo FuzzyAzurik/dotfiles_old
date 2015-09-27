@@ -28,6 +28,8 @@ alias nautilus='nautilus --no-desktop'
 
 #jacobwortman.dk
 alias sshjw='ssh jacob@151.236.216.182' #jacob@jacobwortmann.dk will also work
+alias mountjw='sudo sshfs -o IdentityFile=/home/jacob/.ssh/id_rsa,allow_other jacob@jacobwortmann.dk:/var/www/jacobwortmann.dk /home/jacob/remote'
+
 
 #School
 alias sshcaal='ssh caal.cs.aau.dk -l jwortm10@student.aau.dk'
