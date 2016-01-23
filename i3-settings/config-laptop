@@ -30,7 +30,7 @@ exec --no-startup-id i3-msg 'workspace $tag1' #goto workspace 1
 set $mod Mod4
 # Colors
 # class                 border      backgr.         text                indicator
-client.focused          $colorbg_dark    $colorbg_dark   $textcolor_active   $colorbg_highlight
+client.focused          $colorbg_dark    $colorbg_dark   $textcolor_active   $color_highlight
 client.focused_inactive #2d2d2d     #2d2d2d         $textcolor_inactive #484e50
 client.unfocused        #2d2d2d     #2d2d2d         $textcolor_inactive #292d2e
 client.urgent           #2d2d2d     #2d2d2d         $textcolor_inactive #900000
@@ -110,6 +110,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+#start new app
+default_orientation auto
+
 # set workspace names
 set $tag1 "1: code"
 set $tag2 "2: web"
@@ -125,7 +128,10 @@ set $textcolor_active "#dcdcdc"
 set $textcolor_inactive "#dcdcdc"
 set $colorbg "#F35656"
 set $colorbg_dark "#F8434B"
-set $colorbg_highlight "#FF0E97"
+set $color_separator "#FF0E97"
+set $color_highlight "#00E6FF"
+
+set cool_color "#FF0648"
 
 
 # switch to workspace
@@ -191,7 +197,7 @@ bindsym $mod+r mode "resize"
 #bindsym $mod+u exec setxkbmap gb
 bindsym Control+space exec ~/.i3/.scripts/keyboard-toggle.sh
 #Assign multiple monitors
-#xrandr --output eDP1 --primary --auto 
+#xrandr --output eDP1 --primary --auto
 #xrandr --output HDMI1 --right-of eDP1
 #workspace "1 : Main" output DFP3
 #workspace "2 : www" output DFP3
@@ -209,22 +215,24 @@ bar {
 
     colors{
         background #2d2d2d
-        separator $colorbg_highlight
+        separator $color_separator
 
         focused_workspace  $colorbg_dark $colorbg_dark #ffffff
         active_workspace   #2d2d2d #2d2d2d #dcdcdc
         inactive_workspace #2d2d2d #2d2d2d #dcdcdc
-        urgent_workspace   #aa0000 #990000 #ffffff    
+        urgent_workspace   #aa0000 #990000 #ffffff
     }
-        
+
     # Using custom i3status.conf
     # status_command i3status -c ~/.i3/i3status.conf
 }
 
 #Assign window on workspace
-assign [class="Google-chrome"] $tag2
+assign [class="Atom"] $tag1
+assign [class="Sublime_text"] $tag1
+assign [class="google-chrome"] $tag2
 assign [class="X-www-browser"] $tag2
-assign [class="Thunderbird"] $tag5 
+assign [class="Thunderbird"] $tag5
 assign [class="Skype"] $tag4
 assign [class="Hexchat"] $tag4
 assign [class="Ktorrent"] $tag6
