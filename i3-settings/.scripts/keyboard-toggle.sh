@@ -6,7 +6,7 @@ if [ ! -f "$file" ]; then
 fi
 
 key=$(cat "$file")
-if [ $key == "gb" ]; then
+if [ "$key" = "gb" ]; then
     setxkbmap dk
     echo "dk" > $file
 else
