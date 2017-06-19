@@ -14,6 +14,7 @@
 # auto start
 exec --no-startup-id ~/Programs/pa-applet/src/pa-applet
 exec --no-startup-id skype
+# exec --no-startup-id ~/.i3/scripts/keyboard-toggle.sh
 # exec --no-startup-id i3-msg 'workspace $tag4; exec /usr/bin/gnome-terminal -x weechat;workspace $tag1'
 exec --no-startup-id dropbox start
 exec --no-startup-id insync start
@@ -195,7 +196,8 @@ bindsym $mod+r mode "resize"
 #changing keyboard layout
 #bindsym $mod+y exec setxkbmap dk
 #bindsym $mod+u exec setxkbmap gb
-bindsym Control+space exec ~/.i3/.scripts/keyboard-toggle.sh
+bindsym Control+$mod+k exec ~/.i3/scripts/keyboard-toggle.sh
+
 #Assign multiple monitors
 #xrandr --output eDP1 --primary --auto
 #xrandr --output HDMI1 --right-of eDP1

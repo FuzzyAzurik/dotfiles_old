@@ -11,7 +11,7 @@
 	"caret_extra_width": 1,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Theme - itg.flat/itg.dark.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"copy_with_empty_selection": true,
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_GB.dic",
@@ -24,7 +24,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 13,
+	"font_size": 15,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -42,6 +42,7 @@
 	"match_brackets_content": true,
 	"match_selection": true,
 	"match_tags": true,
+	"material_theme_contrast_mode": true,
 	"numix_folder_icons": true,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
@@ -54,7 +55,7 @@
 	"sidebar_medium": true,
 	"tab_size": 4,
 	"tabs_small": true,
-	"theme": "itg.flat.dark.sublime-theme",
+	"theme": "Material-Theme.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true

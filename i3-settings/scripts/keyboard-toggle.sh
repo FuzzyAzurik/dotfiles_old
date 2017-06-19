@@ -1,15 +1,15 @@
 #! /bin/bash 
-file="/home/jacob/.i3/.scripts/keyboard-setting.txt"
+file="/home/jacob/.i3/scripts/keyboard-setting.txt"
 
 if [ ! -f "$file" ]; then
     echo "dk" > $file; 
 fi
 
 key=$(cat "$file")
+setxkbmap "$key"
+
 if [ "$key" = "gb" ]; then
-    setxkbmap dk
     echo "dk" > $file
 else
-    setxkbmap gb
     echo "gb" > $file
 fi
