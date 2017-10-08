@@ -1,0 +1,32 @@
+" Jacob Wortmann
+
+" Leader
+let mapleader="," "leader is comma
+inoremap jk <esc>
+
+" Movement
+nnoremap j gj
+nnoremap k gk
+
+" Colors
+set t_Co=256
+set background=dark
+colorscheme vim-material
+
+" Misc
+set tabstop=4 "number of visual spaces per TAB
+set softtabstop=4 "number of spaces in tab when editing
+set expandtab " use spaces instead of tabs
+
+" UI
+set number "show line numbers
+set showcmd "show command in bottom bar
+" set cursorline " highligt cursor line
+set showmatch
+
+" Seach
+set incsearch "seach as characters are entered
+set hlsearch "highlight matches
+nnoremap <leader><space> :nohlsearch<CR>
+
+

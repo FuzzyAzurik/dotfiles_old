@@ -17,29 +17,33 @@ double_buffer yes
 
 TEXT
 ,[\
-#Finds out if cmus is running. If it is, it provides 1) the current artist and 2) the current track. If cmus isn't running it outputs "Not Running"
-  #{"full_text": " [${exec sh ~/.i3/.scripts/cmusconk.sh}] ", "color":"\#FD6F6F"}, \
-#Finds current volume. May need modified depending on your setu#ff4600p
-  {"full_text": "  ${exec amixer get Master | grep -o "\[.*%\]"} ", "color":"\#FD6F6F"}, \
-#Shows uploadspeed
-  {"full_text": "${if_up wlan0} [ ${downspeed wlan0} /  ${upspeed wlan0}] ${else} [ ${downspeed eth0} /  ${upspeed eth0}] ${endif} ", "color":"\#FD6F6F"}, \
-#Shows downloadspeed
- # {"full_text": "   ${if_up wlan0} [${downspeed wlan0}] ${else} [${downspeed eth0}] ${endif} ", "color":"\#FD6F6F"}, \
-#Shows the first entry of htop
- # {"full_text": " Process: ${top name 1}■:${top cpu 1}% :${top mem 1}%", "color":"\#FD6F6F"}, \
-#Shows current CPU usage with a bar
-  {"full_text": " ■ [$cpubar] ", "color":"\#FD6F6F"}, \
-#Shows current memory usage with a bar
-  {"full_text": "   [$membar] ", "color":"\#FD6F6F"}, \
-#Shows temperature of GPU. Only works with NVIDIA cards with the proprietary drivers installed. Could be replaced with a lm-sensors-provided temperature
-  {"full_text": " ≈ [${platform coretemp.0 temp 1}°C] ","color":"\#FD6F6F"}, \
-# batt
-  {"full_text" : " ${if_match ${battery_percent} > 0 }${if_match ${battery_percent} <= 15} ${endif}${endif}${if_match ${battery_percent} > 15}${if_match ${battery_percent} <= 50} ${endif}${endif}${if_match ${battery_percent} > 50}${if_match ${battery_percent} <= 75} ${endif}${endif}${if_match ${battery_percent} > 75}${if_match ${battery_percent} <= 100} ${endif}${endif}${battery_percent}%", "color" : "\#FD6F6F"}, \
-  {"full_text" : "", "color" : "\#FD6F6F" }, \
-#Shows upime
-{"full_text": " ↑ [${uptime}] ","color": "\#FD6F6F"}, \
-#Shows time
-  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#FD6F6F"}
-]
+    #Finds out if cmus is running. If it is, it provides 1) the current artist and 2) the current track. If cmus isn't running it outputs "Not Running"
+    #{"full_text": " [${exec sh ~/.i3/.scripts/cmusconk.sh}] ", "color":"\#FD6F6F"}, \
+    
+    #Finds current volume. May need modified depending on your setu#ff4600p
+    {"full_text": "  ${exec amixer get Master | grep -o "\[.*%\]"} ", "color":"\#FD6F6F"}, \
+    
+    #Shows download and upload speeds
+    {"full_text": "${if_up wlp3s0} [ ${downspeed wlp3s0} /  ${upspeed wlp3s0}] ${else} [ ${downspeed eth0} /  ${upspeed eth0}] ${endif} ", "color":"\#FD6F6F"}, \
+    
+    #Shows the first entry of htop
+    {"full_text": " Process: [${top name 1}]", "color":"\#FD6F6F"}, \
 
-#See 
+    #Shows current CPU usage with a bar
+    {"full_text": " ■ [$cpubar] ", "color":"\#FD6F6F"}, \
+    
+    #Shows current memory usage with a bar
+    {"full_text": "   [$membar] ", "color":"\#FD6F6F"}, \
+    
+    #Shows temperature of GPU. Only works with NVIDIA cards with the proprietary drivers installed. Could be replaced with a lm-sensors-provided temperature
+    {"full_text": " ≈ [${platform coretemp.0 temp 1}°C] ","color":"\#FD6F6F"}, \
+    
+    # battery
+    {"full_text" : " ${if_match ${battery_percent} > 0 }${if_match ${battery_percent} <= 15} ${endif}${endif}${if_match ${battery_percent} > 15}${if_match ${battery_percent} <= 50} ${endif}${endif}${if_match ${battery_percent} > 50}${if_match ${battery_percent} <= 75} ${endif}${endif}${if_match ${battery_percent} > 75}${if_match ${battery_percent} <= 100} ${endif}${endif}${battery_percent}%", "color" : "\#FD6F6F"}, \
+    
+    #Shows upime
+    {"full_text": " ↑ [${uptime}] ","color": "\#FD6F6F"}, \
+    
+    #Shows time
+    {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#FD6F6F"}
+]
